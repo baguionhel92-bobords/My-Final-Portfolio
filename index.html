@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nhel Baguio — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-logo">NB</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-deco hero-deco--circle"></div>
+    <div class="hero-deco hero-deco--ring"></div>
+    <div class="hero-content">
+      <span class="hero-tag reveal">BSIT Student · 2025–2026</span>
+      <h1 class="hero-title reveal">
+        <span class="line">Nhel</span>
+        <span class="line italic">Baguio</span>
+      </h1>
+      <p class="hero-sub reveal">Colegio de San Francisco Javier</p>
+      <a href="#about" class="btn reveal">Explore My Work ↓</a>
+    </div>
+
+    <!-- PHOTO CARD -->
+    <div class="photo-card reveal">
+      <div class="photo-frame" id="photoFrame">
+        <label for="photoUpload" class="photo-label" id="photoLabel">
+          <div class="photo-placeholder">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="22" r="10" stroke="currentColor" stroke-width="2"/>
+              <path d="M10 50c0-11 9-18 20-18s20 7 20 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span>Click to upload<br/>your photo</span>
+          </div>
+          <img id="previewImg" src="" alt="Nhel Baguio" style="display:none;" />
+        </label>
+        <input type="file" id="photoUpload" accept="image/*" />
+      </div>
+      <div class="photo-info">
+        <strong>Nhel Baguio</strong>
+        <span>BSIT · 2025–2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title reveal">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Hi, I'm <strong>Nhel Baguio</strong> — a passionate and driven
+            <strong>Bachelor of Science in Information Technology (BSIT)</strong>
+            student at <em>Colegio de San Francisco Javier</em>.
+          </p>
+          <p>
+            I am currently in the academic year <strong>2025–2026</strong>, eager to
+            build a solid foundation in software development, networking, and digital
+            innovation. I believe technology is a bridge between ideas and real-world
+            solutions, and I aim to be part of that bridge.
+          </p>
+          <p>
+            Outside of academics, I love exploring new technologies, working on
+            personal coding projects, and continuously sharpening my problem-solving
+            skills. I am driven by curiosity and a desire to make a meaningful impact
+            in the tech world.
+          </p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <span class="stat-num">BSIT</span>
+            <span class="stat-label">Course</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2025</span>
+            <span class="stat-label">Start Year</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2026</span>
+            <span class="stat-label">Current Year</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">CSFJ</span>
+            <span class="stat-label">School</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section education" id="education">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title reveal">Education</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2025 – 2026</span>
+            <h3>Bachelor of Science in Information Technology</h3>
+            <p class="timeline-school">Colegio de San Francisco Javier</p>
+            <p>Currently enrolled and actively pursuing excellence in IT, covering subjects
+               such as programming, data structures, database management, and web
+               development.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">Present</span>
+            <h3>Continuous Learning</h3>
+            <p class="timeline-school">Self-directed & Online</p>
+            <p>Constantly expanding knowledge through online platforms and personal
+               projects in coding, design, and technology trends.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title reveal">Skills & Interests</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-pill reveal">Web Development</div>
+        <div class="skill-pill reveal">Programming</div>
+        <div class="skill-pill reveal">Database Management</div>
+        <div class="skill-pill reveal">Networking Basics</div>
+        <div class="skill-pill reveal">Problem Solving</div>
+        <div class="skill-pill reveal">UI/UX Awareness</div>
+        <div class="skill-pill reveal">Data Structures</div>
+        <div class="skill-pill reveal">Software Design</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title reveal">Get In Touch</h2>
+      </div>
+      <div class="contact-body reveal">
+        <p>I'm open to collaborations, internships, and new opportunities.
+           Feel free to reach out!</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-icon">🎓</span>
+            <div>
+              <strong>School</strong>
+              <span>Colegio de San Francisco Javier</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📚</span>
+            <div>
+              <strong>Course</strong>
+              <span>Bachelor of Science in Information Technology</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📅</span>
+            <div>
+              <strong>Academic Year</strong>
+              <span>2025 – 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 <strong>Nhel Baguio</strong>. All rights reserved.</p>
+    <p class="footer-school">Colegio de San Francisco Javier · BSIT</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
